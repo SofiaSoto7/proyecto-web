@@ -4,7 +4,8 @@
  padding: 0;
  box-sizing: border-box;
 text-decoration: none;
-list-style: none;}
+list-style: none;
+}
 
 body{
     font-family: 'Poppins', sans-serif;
@@ -18,7 +19,7 @@ img {max-width: 100%;}
 }
 
 .header{ 
-    background-image: url(/img/Imagen\ 1.jpg);
+    background-image: url(Imagen\ 1.jpg);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -120,6 +121,7 @@ p {
 }
 .about-txt p {
     color: black;
+    padding: 20px;
 }
 
 .products {
@@ -160,10 +162,11 @@ p {
 }
 .information {
     padding: 70px 0;
-    background-image: url(/img/aretes.png);
+    background-image: url(anillos.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: center;
 }
 .information-content {
     display: flex;
@@ -173,10 +176,11 @@ p {
 }
 .information-2 {
     flex-basis: 50%;
-    padding-left: 50px;
+    padding: 50px;
 }
 .information-2 h2 {
     color: rgb(238, 65, 152);
+    text-align: center;
 }
 .img-content {
     display: flex;
@@ -212,7 +216,7 @@ text-transform: capitalize;}
 
 .footer {
     background-color: rgb(52, 218, 135);
-    padding: 50px 0;
+    padding: 50px 50px;
 }
 
 .footer-content {
@@ -290,7 +294,52 @@ text-transform: capitalize;}
     .about-txt p {
         margin-bottom: 15px;
     }
-    
+    .product {
+        padding: 30px;
+    }
+    .products-content {
+        padding: 0 30px;
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    .information {
+        padding: 30px;
+        background-position: center;
+    }
+    .information-content {
+        flex-direction:column;
+    }
+    .information {
+        text-align: center;
+        padding: 20px;
+    }
+
+
+    .img-content {
+        justify-content: center;
+    }
+    .img-content img {
+        width: 80px;
+    }
+    .contact {
+        padding: 30px;
+    }
+    form {
+        margin-top: 30px;
+    }
+    input {
+        margin: 0  10px 10px 0;
+    }
+
+    .footer {
+        padding: 30px;
+    }
+
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 
